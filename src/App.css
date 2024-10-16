@@ -1,38 +1,101 @@
-.App {
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f9f9f9;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  margin-left: 10px;
+}
+
+.joke-container {
+  text-align: center;
+}
+
+.joke-container p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 1rem 0;
 }
